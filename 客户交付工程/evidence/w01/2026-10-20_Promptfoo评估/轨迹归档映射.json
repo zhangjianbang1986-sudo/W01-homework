@@ -1,0 +1,37 @@
+[
+  {
+    "source": "/var/folders/wl/1vgm4rl16v71vs3z7mmw8k740000gn/T/fde-eval-_5p0am1e/trace.jsonl",
+    "archive": "evidence/w01/2026-10-20_Promptfoo评估/case-01-trace.jsonl",
+    "sha256": "d898af5ef219fa597a50a246841c433beb923f63321e546e463f46e823ebf846"
+  },
+  {
+    "source": "/var/folders/wl/1vgm4rl16v71vs3z7mmw8k740000gn/T/fde-eval-v1zyjdqb/trace.jsonl",
+    "archive": "evidence/w01/2026-10-20_Promptfoo评估/case-02-trace.jsonl",
+    "sha256": "25e93f83ec8db3f7f5e2cd78f9af2a6061076d59ff717c7498095ea9be0fa661"
+  },
+  {
+    "source": "/var/folders/wl/1vgm4rl16v71vs3z7mmw8k740000gn/T/fde-eval-fxa0rrfw/trace.jsonl",
+    "archive": "evidence/w01/2026-10-20_Promptfoo评估/case-03-trace.jsonl",
+    "sha256": "fef65f2eafc11cf754e612f7d7564a7d68a0450dc8af3701f1eeda8598b31fc8"
+  },
+  {
+    "source": "/var/folders/wl/1vgm4rl16v71vs3z7mmw8k740000gn/T/fde-eval-v5zibn_h/trace.jsonl",
+    "archive": "evidence/w01/2026-10-20_Promptfoo评估/case-04-trace.jsonl",
+    "sha256": "50f49148aef728ebe5a39360075e9cd0020ecaaaac4ec922797d94aafd20656a"
+  },
+  {
+    "source": "/var/folders/wl/1vgm4rl16v71vs3z7mmw8k740000gn/T/fde-eval-6z4w5vc4/trace.jsonl",
+    "archive": "evidence/w01/2026-10-20_Promptfoo评估/case-05-trace.jsonl",
+    "sha256": "dd103299e9839229089760f65eb014ebbf89719a6865986ff35cc7298713c50c"
+  },
+  {
+    "source": "/var/folders/wl/1vgm4rl16v71vs3z7mmw8k740000gn/T/fde-eval-piq9cf0n/trace.jsonl",
+    "archive": "evidence/w01/2026-10-20_Promptfoo评估/case-06-trace.jsonl",
+    "sha256": "61922cbf2135db560f16150615806d93fe9edb2537b70af7d9a3b6b3d2392da8"
+  },
+  {
+    "source": "/var/folders/wl/1vgm4rl16v71vs3z7mmw8k740000gn/T/fde-eval-2yxdiqo0/trace.jsonl",
+    "archive": "evidence/w01/2026-10-20_Promptfoo评估/case-07-trace.jsonl",
+    "sha256": "44a046bdf3ff3eeefb3d35cf6bc9893a932ba1a4f28dd2367dc518cdeadeebaf"
+  }
+]
