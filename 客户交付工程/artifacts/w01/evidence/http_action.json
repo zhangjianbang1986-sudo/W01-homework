@@ -1,0 +1,164 @@
+{
+  "product_version": "0.2.0-w1",
+  "runtime_revision": "w01-runtime-20260922",
+  "session_id": "4a5e1e6b-4d61-4a31-88ab-0b8862967988",
+  "model_mode": "live",
+  "model_name": "deepseek-flash",
+  "prompt_sha256": "051286bc27083b1f3cd9201ebcd09030830ec3a06401197a0adaa0f1003fcddd",
+  "status": "completed",
+  "result": {
+    "status": "completed",
+    "summary": "样例会员 M001 的 recall_review 标签草案（动作 ID：bdd15db2-faab-438c-8f1b-d408094c6bdb）已经过界面人工确认，并已执行成功。系统查询当前状态为 applied，标签处于生效状态（label_active=true，version=1）。本任务未进行消费比较分析，也没有发券或发送消息等动作。",
+    "recommendations": [],
+    "evidence_ids": [
+      "bdd15db2-faab-438c-8f1b-d408094c6bdb"
+    ],
+    "limitations": [
+      "本次结果仅表示样例标签已批准并执行成功，不代表已经触达会员或产生召回效果。",
+      "标签只覆盖单一会员 M001，不能推广到其他会员。",
+      "若需撤销标签，须由运营人员通过受控入口操作，本分析入口无撤销权限。"
+    ]
+  },
+  "observations": [
+    {
+      "name": "describe_business",
+      "result": {
+        "status": "ok",
+        "semantics": {
+          "version": "sample-semantics-1",
+          "company": "松果生活（独立虚构样例）",
+          "objects": [
+            "Member",
+            "Order",
+            "Store",
+            "Tag"
+          ],
+          "links": [
+            "Member belongs_to Store",
+            "Order belongs_to Member"
+          ],
+          "spend": {
+            "id": "sample.net_spend.v1",
+            "aggregation": "paid_minus_refunded_cents",
+            "unit": "CNY cents",
+            "include": "status=paid",
+            "window": "start inclusive, end exclusive"
+          },
+          "old_member": {
+            "basis": "joined_before_baseline"
+          },
+          "decline": {
+            "minimum_pct": 20,
+            "formula": "(baseline-current)/baseline*100",
+            "zero_baseline": "undefined; excluded from decline cohort"
+          },
+          "recommendation_constraints": [
+            "只提出可供运营人员审核的建议，不承诺召回效果",
+            "未获得确认不执行标签动作",
+            "不声称已经发券",
+            "引用工具 evidence_id，金额只能来自工具结果"
+          ]
+        },
+        "dataset": {
+          "dataset_version": "sample-1",
+          "business_reference_date": "2026-09-01",
+          "fictional": true,
+          "company": "松果生活",
+          "description": "独立于青禾。2026 年 7 月与 8 月；S03 的 8 月没有数据覆盖，不可当作消费为零。"
+        },
+        "coverage": [
+          {
+            "store_id": "S01",
+            "start": "2026-07-01",
+            "end": "2026-09-01"
+          },
+          {
+            "store_id": "S02",
+            "start": "2026-07-01",
+            "end": "2026-09-01"
+          },
+          {
+            "store_id": "S03",
+            "start": "2026-07-01",
+            "end": "2026-08-01"
+          }
+        ],
+        "required": "必须由用户明确或确认两个时段，不能擅自用默认日期替代澄清。"
+      },
+      "call_id": "call_00_seBfdX9818smOF05Jm059004"
+    },
+    {
+      "name": "prepare_tag",
+      "result": {
+        "status": "awaiting_approval",
+        "draft": {
+          "id": "bdd15db2-faab-438c-8f1b-d408094c6bdb",
+          "session": "4a5e1e6b-4d61-4a31-88ab-0b8862967988",
+          "payload": {
+            "member_id": "M001",
+            "tag": "recall_review"
+          },
+          "hash": "dde05eb7b0c2b5dcfe80d0241c7ac3ee439b40d4c7333873c27066618bdcbf19",
+          "status": "draft",
+          "result": null
+        }
+      },
+      "call_id": "call_01_IQRgwlIPQ6H89WuS2Uh99790"
+    },
+    {
+      "name": "tag_execution",
+      "result": {
+        "id": "bdd15db2-faab-438c-8f1b-d408094c6bdb",
+        "session": "4a5e1e6b-4d61-4a31-88ab-0b8862967988",
+        "payload": {
+          "member_id": "M001",
+          "tag": "recall_review"
+        },
+        "hash": "dde05eb7b0c2b5dcfe80d0241c7ac3ee439b40d4c7333873c27066618bdcbf19",
+        "status": "applied",
+        "result": {
+          "action_id": "bdd15db2-faab-438c-8f1b-d408094c6bdb",
+          "status": "applied",
+          "payload": {
+            "member_id": "M001",
+            "tag": "recall_review"
+          },
+          "label_active": true,
+          "label_version": 1
+        }
+      }
+    },
+    {
+      "name": "query_tag",
+      "result": {
+        "id": "bdd15db2-faab-438c-8f1b-d408094c6bdb",
+        "session": "4a5e1e6b-4d61-4a31-88ab-0b8862967988",
+        "payload": {
+          "member_id": "M001",
+          "tag": "recall_review"
+        },
+        "hash": "dde05eb7b0c2b5dcfe80d0241c7ac3ee439b40d4c7333873c27066618bdcbf19",
+        "status": "applied",
+        "result": {
+          "action_id": "bdd15db2-faab-438c-8f1b-d408094c6bdb",
+          "status": "applied",
+          "payload": {
+            "member_id": "M001",
+            "tag": "recall_review"
+          },
+          "label_active": true,
+          "label_version": 1
+        }
+      },
+      "call_id": "call_00_SPP9tLcJNYBDGTCoApFp2869"
+    }
+  ],
+  "steps": 3,
+  "output_repairs": 0,
+  "usage": {
+    "prompt_tokens": 7137,
+    "completion_tokens": 476,
+    "total_tokens": 7613
+  },
+  "trace_id": "a3b06abde1d01c5d594b42f06e3755f3"
+}

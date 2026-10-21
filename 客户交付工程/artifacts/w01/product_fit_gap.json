@@ -1,0 +1,62 @@
+{
+  "contract_version": "w01-0.2.1",
+  "product_version": "0.2.0-w1",
+  "capability_matrix_version": "w1-capabilities-0.2.0",
+  "items": [
+    {
+      "id": "GAP-001",
+      "request": "客户认为自己有80万活跃会员，希望Agent帮助运营识别哪些人需要重点经营。",
+      "category": "待判断",
+      "capability_ids": [
+        "CAP-006"
+      ],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "evidence/w01/首访与立项依据/01_沈总立项邮件.md",
+          "locator": "MAIL-W01-001，正文“我先说三件事”段，第二件事",
+          "note": "沈总提出有80万活跃会员、希望识别重点经营人群；仅证明提出该诉求，不证明规模及口径成立。"
+        }
+      ],
+      "next_step": "找运营人员，确认是否有80万活跃会员、重点客户的标准是什么、需要经营的目标是什么。"
+    },
+    {
+      "id": "GAP-002",
+      "request": "客户希望Agent能够直接给出运营建议，并且不要额外再整理表格，不要增加人员工作量。",
+      "category": "待判断",
+      "capability_ids": [
+        "CAP-001",
+        "CAP-003"
+      ],
+      "evidence_status": "reported",
+      "evidence": [
+        {
+          "source": "evidence/w01/首访与立项依据/01_沈总立项邮件.md",
+          "locator": "MAIL-W01-001，正文“我先说三件事”段，第三件事",
+          "note": "沈总提出直接给小林运营建议，不让她多整理一套表；不把这句话扩大为客户确认全面零工作量。"
+        }
+      ],
+      "next_step": "找小林，确认当前运营工作流程、需要什么样的运营建议，以及输出还缺少哪些字段。"
+    },
+    {
+      "id": "GAP-003",
+      "request": "三个月看到复购改善，暂未定量。",
+      "category": "暂不承诺",
+      "capability_ids": [],
+      "evidence_status": "verified",
+      "evidence": [
+        {
+          "source": "evidence/w01/首访与立项依据/01_沈总立项邮件.md",
+          "locator": "MAIL-W01-001，正文第一段",
+          "note": "邮件明确提出“三个月能看到效果”；本行已核实仅指该预期已明确提出，不表示效果可实现或合同条款已确认。"
+        },
+        {
+          "source": "evidence/w01/首访与立项依据/W1-interview-d8b70b58-7b71-5e78-9c99-c9ae271d1762-public.json",
+          "locator": "MSG-00595、MSG-00597",
+          "note": "沈总提出止跌回升，具体幅度、口径与交付范围尚未确认。"
+        }
+      ],
+      "next_step": "找运营，确认当前现状、会员复购的计算口径；找IT，确认目前的系统现状、系统与业务流程的关系；找门店，确认已有销售数据、关键字段、哪些可以拿到；再与沈总确认三个月见效的标准。"
+    }
+  ]
+}
